@@ -3,7 +3,7 @@ window.onload=function(){
     swipeLeft();
 
    
-    swipeRight()
+    // swipeRight()
 }
 
 function swipeLeft(){
@@ -114,81 +114,7 @@ function swipeLeft(){
     })
 
 }
-
-function swipeRight(){
-    var leftBox=document.querySelector('.body-right');
-    var ul=leftBox.querySelector('.right-in');
-
-    var currentY=0;
-    
+$('.body-left li').on('click',function(){
    
-    var maxTop=0;
-    var minTop=leftBox.offsetHeight-ul.offsetHeight;
- 
-        maxSwipe=maxTop+240;
-        minSwipe=minTop-240;
-    // var maxSwipe=maxTop+240;
-    // var minSwipe=minTop-240;
-  
-    var addTransition=function(){
-        ul.style.webkitTransition='transform 0.1s';
-        ul.style.transition='transform 0.1s';
-    }
-   
-    var removeTransition=function(){
-        ul.style.webkitTransition='none';
-        ul.style.transition='none';
-    }
-    
-    var setTranslateY=function(translateY){
-        ul.style.webkitTransform='translateY('+translateY+'px)';
-        ul.style.transform='translateY('+translateY+'px)';
-    }
-
-
-   
-    var startY=0;
-    var moveY=0;
-    var distanceY=0;
-    leftBox.addEventListener('touchstart',function(e){
-        startY= e.targetTouches[0].clientY;
-    });
-
-    leftBox.addEventListener('touchmove',function(e){
-        moveY= e.targetTouches[0].clientY;
-        distanceY=moveY-startY;
-       
-        var y=currentY+distanceY;
-        
-        if(y>maxSwipe){
-            y=maxSwipe;
-        }
-        if(y<minSwipe){
-            y=minSwipe;
-        }
-        removeTransition();
-        setTranslateY(y);
-    });
-
-    leftBox.addEventListener('touchend',function(){
-      
-        currentY=currentY+distanceY;
-       
-        if(currentY>maxTop){
-            currentY=maxTop;
-            addTransition(); 
-            setTranslateY(currentY); 
-        }
-        if(currentY<minTop){
-            currentY=minTop;
-            addTransition(); 
-            setTranslateY(currentY); 
-        }
-
-       
-        startY=0;
-        moveY=0;
-        distanceY=0;
-    })
-
-}
+    console.log(123);
+})

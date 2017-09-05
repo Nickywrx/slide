@@ -73,13 +73,17 @@ body {
   background-color: #eee;
   /*padding: 10px;*/
 }
+.right-in{
+  overflow: scroll;
+  height: 100%;  
+}
 .right-in ul{
   display: none;
-	height: 100%;
+	/*height: 100%;*/
 }
 .right-in ul.active{
   display: block;
-  height: 100%;
+  height: auto;
 }
 .category-body .body-right .right-in .banner a {
   display: block;

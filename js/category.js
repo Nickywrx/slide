@@ -20,8 +20,8 @@ function swipeLeft(){
     var maxSwipe=maxTop+240;
     var minSwipe=minTop-240;
     var addTransition=function(){
-        ul.style.webkitTransition='transform 0.2s';
-        ul.style.transition='transform 0.2s';
+        ul.style.webkitTransition='transform 0.1s';
+        ul.style.transition='transform 0.1s';
     }
     var removeTransition=function(){
         ul.style.webkitTransition='none';
@@ -131,8 +131,8 @@ function swipeRight(){
     // var minSwipe=minTop-240;
   
     var addTransition=function(){
-        ul.style.webkitTransition='transform 0.2s';
-        ul.style.transition='transform 0.2s';
+        ul.style.webkitTransition='transform 0.1s';
+        ul.style.transition='transform 0.1s';
     }
    
     var removeTransition=function(){

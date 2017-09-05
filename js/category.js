@@ -7,7 +7,7 @@ window.onload=function(){
 }
 
 function swipeLeft(){
-    var leftBox=document.querySelector('.left-in');
+    var leftBox=document.querySelector('.body-left');
     var ul=leftBox.querySelector('ul');
     var lis=ul.querySelectorAll('li');
     var rightins=document.querySelectorAll('.right-in ul');
@@ -69,7 +69,7 @@ function swipeLeft(){
     });
 
     
-   /* var startY=0;
+    var startY=0;
     var moveY=0;
     var distanceY=0;
     leftBox.addEventListener('touchstart',function(e){
@@ -112,9 +112,9 @@ function swipeLeft(){
         moveY=0;
         distanceY=0;
     })
-*/
+
 }
 $('.body-left li').on('click',function(){
-   
+    $('.right-in ul').animate({ scrollTop: 0},200);
     console.log(123);
 })

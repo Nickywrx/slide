@@ -75,7 +75,7 @@ body {
 }
 .left-in{
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
 }
 .right-in{
   overflow: scroll;

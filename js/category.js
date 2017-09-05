@@ -69,7 +69,7 @@ function swipeLeft(){
     });
 
     
-    var startY=0;
+   /* var startY=0;
     var moveY=0;
     var distanceY=0;
     leftBox.addEventListener('touchstart',function(e){
@@ -112,7 +112,7 @@ function swipeLeft(){
         moveY=0;
         distanceY=0;
     })
-
+*/
 }
 $('.body-left li').on('click',function(){
    

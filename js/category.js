@@ -15,7 +15,7 @@ function swipeLeft(){
     var currentY=0;
  
     var maxTop=0;
-    var minTop=leftBox.offsetHeight-ul.offsetHeight;
+    var minTop=leftBox.offsetHeight-ul.offsetHeight-600;
 
     var maxSwipe=maxTop+240;
     var minSwipe=minTop-240;
@@ -57,7 +57,8 @@ function swipeLeft(){
         if(y<minTop){
             y=minTop;
         }
-       
+        console.log(maxTop);
+        console.log(minTop);
         addTransition();
        
         setTranslateY(y);
@@ -114,7 +115,3 @@ function swipeLeft(){
     })
 
 }
-$('.body-left li').on('click',function(){
-    $('.right-in ul').animate({ scrollTop: 0},200);
-    console.log(123);
-})

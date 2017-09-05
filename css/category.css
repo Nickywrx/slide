@@ -73,6 +73,10 @@ body {
   background-color: #eee;
   /*padding: 10px;*/
 }
+.left-in{
+  height: 100%;
+  overflow: hidden;
+}
 .right-in{
   overflow: scroll;
   height: 100%;  

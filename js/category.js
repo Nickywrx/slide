@@ -7,7 +7,7 @@ window.onload=function(){
 }
 
 function swipeLeft(){
-    var leftBox=document.querySelector('.body-left');
+    var leftBox=document.querySelector('.left-in');
     var ul=leftBox.querySelector('ul');
     var lis=ul.querySelectorAll('li');
     var rightins=document.querySelectorAll('.right-in ul');
